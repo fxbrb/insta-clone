@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: 'FONTSPRING DEMO - Blue Vinyl';
+  src: url('./assets/fonts/FONTSPRINGDEMO-BlueVinylRegular.woff2') format('woff2'),
+      url('./assets/fonts/FONTSPRINGDEMO-BlueVinylRegular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.icon path {
+  stroke: rgb(43, 43, 43);
+}
+
+
+.iconDark path {
+  stroke: rgb(255, 255, 255);
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* For IE, Edge and Firefox */
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+
+@layer base {
+     h1 {
+      @apply text-2xl;
+     }
+     h2 {
+      @apply text-xl;
+     }
+     a {
+      @apply text-[#2b2b2b]
+     }
+     p{
+      @apply text-[#262626]
+     }
+   }
